@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Kirill Eremin](https://up.htmlacademy.ru/htmlcss/37/user/2385583).
-* Наставник: `Александр Сударев`.
+* Наставник: [Александр Сударев](https://htmlacademy.ru/profile/id1152185).
 
 ---
 
