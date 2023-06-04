@@ -7,18 +7,22 @@
   </head>
 
   <body>
-    <header class="inner-header">
+    <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item"><a href="index.html"><img src="#" alt="Sedona-logo"></a></li>
-          <li class="navigation-item"><a href="index.html">Главная</a></li>
+          <li class="navigation-item"><a aria-current="page" href="index.html"><img
+                src="images/index/svg/graphics/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны"></a>
+          </li>
+          <li class="navigation-item"><a aria-current="page" href="index.html">Главная</a></li>
           <li class="navigation-item"><a href="#">О Седоне</a></li>
-          <li class="navigation-item"><a aria-current="page" href="catalog.html">Гостиннцы</a></li>
+          <li class="navigation-item"><a href="catalog.html">Гостиннцы</a></li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item"><a class="button icon-button" href="#"><span
+          <li class="navigation-item"><a class="button icon-button" href="#"><img
+                src="images/index/svg/icons/search-min.svg" width="20" height="20" alt=""><span
                 class="visually-hidden">Поиск</span></a></li>
-          <li class="navigation-item"><a class="button icon-button" href="#"><span
+          <li class="navigation-item"><a class="button icon-button" href="#"><img
+                src="images/index/svg/icons/heart-min.svg" width="20" height="20" alt=""><span
                 class="visually-hidden">Избранное</span></a></li>
           <li class="navigation-item"><a class="button icon-button" href="#"><span class="visually-hidden">Хочу
                 сюда</span></a></li>
@@ -30,7 +34,9 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"><img class="icon" src="#" alt="Иконка главной страницы"></a>
+            <a class="breadcrumbs-link" href="index.html"><img class="icon" src="images/catalog/svg/icons/home-min.svg"
+                width="13" height="15" alt="Иконка домой"></a>
+            <img src="images/catalog/svg/icons/breadcrumbs-arrow-min.svg" width="8" height="20" alt="">
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Каталог</a>
@@ -104,6 +110,7 @@
           <button class="button primary-button" type="submit">Применить</button>
           <button class="button transparent-button" type="reset">Сбросить</button>
         </form>
+        <img src="images/catalog/jpg/background-header.jpg" width="1200" height="412" alt="фоновое изображение">
       </section>
       <section class="catalog-cards">
         <h2 class="visually-hidden">Список гостиниц</h2>
@@ -118,6 +125,7 @@
         <ul class="view-controls">
           <li class="view-controls-button">
             <a href="#">
+              <!--тут-->
               <img class="button icon-button" src="#" alt="Маленькие карточки">
               <span class="visually-hidden">Маленькие карточки</span>
             </a>
