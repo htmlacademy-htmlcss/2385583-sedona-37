@@ -1,14 +1,16 @@
+/* Main */
+
 @font-face {
-  font-family: "PT Sans";
-  src: url("ptsans-400.woff2") format("woff2");
+  font-family: "PT Sans", "Arial";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    src: url("ptsans-700.woff2") format("woff2");
+    font-family: "PT Sans", "Arial";
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-weight: 700;
     font-style: bold;
     font-display: swap;
@@ -21,3 +23,95 @@ body {
     color: #000000;
     background-color: #ffffff;
   }
+
+/* Страницы */
+
+.page-header {
+  background-color: #ffffff;
+}
+
+/* Шрифты */
+
+/* Заголовок второго уровня */
+
+h2 {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+/* Подзаголовок второго уровня */
+
+.advantages-description {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+    text-align: center;
+}
+
+/* Заголовок третьего уровня */
+
+.advantages-item-title {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+/* Подзаголовок третьего уровня */
+
+.advantages-item-description {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+/* Фоны преимуществ */
+
+.advantages-item:first-child, .advantages-item:last-child {
+    background-color: #82B3D3;
+    color: #ffffff;
+}
+
+.advantages-item:nth-child(2n) {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+    background-color: rgba(131, 179, 211, 0.2);
+    color: #000000;
+
+}
+
+/* Ссылки */
+ .navigation-item-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: bold;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Кнопка*/
+
+.button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
