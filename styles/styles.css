@@ -1,7 +1,7 @@
 /* Main */
 
 @font-face {
-  font-family: "PT Sans", "Arial";
+  font-family: "PT Sans", "Arial", sans-serif;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: "PT Sans", "Arial";
+    font-family: "PT Sans", "Arial", sans-serif;
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-weight: 700;
     font-style: bold;
@@ -22,6 +22,7 @@ body {
     line-height: 21px;
     color: #000000;
     background-color: #ffffff;
+
   }
 
 /* Страницы */
@@ -30,21 +31,35 @@ body {
   background-color: #ffffff;
 }
 
-/* Шрифты */
+/* ШРИФТЫ */
 
+/* Заголовок первого уровня */
+
+.inner-header-title {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 60px;
+    line-height: 78px;
+    text-align: center;
+    color: #ffffff;
+}
 /* Заголовок второго уровня */
-
-h2 {
+.advantages-title, .suggestions-title, .catalog-entrance-title {
     font-weight: 700;
     font-style: bold;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
 }
+.subscription-title {
+    color: #ffffff;
+}
+.subscription-title-background {
+    color: #000000;
+}
 
 /* Подзаголовок второго уровня */
-
-.advantages-description {
+.advantages-description, .suggestions-description, .catalog-entrance-description {
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -52,28 +67,66 @@ h2 {
     color: #333333;
     text-align: center;
 }
-
+.subscription-description {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+}
+.subscription-description-background {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+}
 /* Заголовок третьего уровня */
-
-.advantages-item-title {
+h3 {
     font-weight: 700;
     font-style: bold;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
 }
-
 /* Подзаголовок третьего уровня */
-
-.advantages-item-description {
+.advantages-item-description, .suggestions-item-description {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
     font-style: normal;
     text-align: center;
 }
+/* Заголовки фильтров */
+.catalog-filters-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: bold;
+    color: #ffffff;
+}
+/* Элементы управления */
+.control {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Найдено */
+.search-amount-title, .search-amount {
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
 
-/* Фоны преимуществ */
+}
+
+/* ФОНЫ ПРЕИМУЩЕСТВ */
 
 .advantages-item:first-child, .advantages-item:last-child {
     background-color: #82B3D3;
@@ -91,8 +144,22 @@ h2 {
 
 }
 
-/* Ссылки */
- .navigation-item-title {
+/*КНОПКИ И ССЫЛКИ */
+
+li {
+    list-style-type: none;
+}
+
+.breadcrumbs-link {
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+
+.navigation-item-title {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -103,9 +170,11 @@ h2 {
     text-align: center;
 }
 
-/*Кнопка*/
+.visually-hidden {
+    visibility: hidden;
+}
 
-.button {
+.primary-button{
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -114,4 +183,158 @@ h2 {
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
+    background-color: #756157;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 34px;
+    padding-right: 34px;
+    border-radius: 4px;
+}
+
+.secondary-button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    background-color: #82B3D3;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 4px;
+    border: none;
+}
+
+.secondary-button:active {
+    background-color: #7DB54F;
+}
+
+.transparent-button {
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 4px;
+    border: none;
+
+}
+
+.view-controls-button {
+    background-color: #ffffff;
+    border: #000000;
+}
+
+.pagination-link {
+    background-color: #82B3D3;
+    text-decoration: none;
+    color: #000000;
+}
+
+.pagination-current {
+    background-color: #F2F2F2;
+    color: #ffffff;
+}
+
+.pagination-dots {
+    background-color: none;
+    color: #000000;
+}
+
+/* Картинки */
+
+.suggestions, .catalog-entrance {
+    text-align: center;
+}
+
+.hero {
+    background-image: url(../images/index/jpg/background-header.jpg);
+    width: 1200px;
+    height: 485px;
+    text-align: center;
+}
+
+.subscription-w-background {
+    background-color: #000000;
+    background-image: url(../images/index/jpg/background-footer.jpg);
+    width: 1200px;
+    height: 415px;
+    text-align: center;
+}
+
+.subscription-no-background {
+    background-color: #ffffff;
+    width: 1200px;
+    height: 415px;
+    text-align: center;
+}
+
+.settings-filters {
+    background-image: url(../images/catalog/jpg/background-header.jpg);
+    background-color: #000000;
+    background-repeat: no-repeat;
+}
+
+/* КАРТОЧКИ ТОВАРОВ */
+
+.catalog-cards {
+    background-color: #ffffff;
+}
+
+.catalog-card-link {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    font-style: bold;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.catalog-card-type {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+}
+
+.catalog-card-rating {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+}
+
+/* ФУТЕР */
+
+.page-footer {
+    background-color: #ffffff;
+}
+
+.footer-contacts-phone {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-social-item {
+    text-decoration: none;
 }
