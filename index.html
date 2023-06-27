@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -13,18 +14,19 @@
           <li class="navigation-item"><a aria-current="page" href="index.html"><img
                 src="images/index/svg/graphics/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны"></a>
           </li>
-          <li class="navigation-item"><a aria-current="page" href="index.html">Главная</a></li>
-          <li class="navigation-item"><a href="#">О Седоне</a></li>
-          <li class="navigation-item"><a href="catalog.html">Гостиннцы</a></li>
+          <li class="navigation-item"><a class="navigation-item-title" aria-current="page" href="index.html">Главная</a></li>
+          <li class="navigation-item"><a class="navigation-item-title" href="#">О Седоне</a></li>
+          <li class="navigation-item"><a class="navigation-item-title" href="catalog.html">Гостиницы</a></li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item"><a class="button icon-button" href="#"><img
+          <li class="navigation-item"><a class="icon-button" href="#"><img
                 src="images/index/svg/icons/search-min.svg" width="20" height="20" alt=""><span
                 class="visually-hidden">Поиск</span></a></li>
-          <li class="navigation-item"><a class="button icon-button" href="#"><img
-                src="images/index/svg/icons/heart-min.svg" width="20" height="20" alt=""><span
-                class="visually-hidden">Избранное</span></a></li>
-          <li class="navigation-item"><a class="button icon-button" href="#"><span class="visually-hidden">Хочу
+          <li class="navigation-item"><a class="icon-button" href="#"><img
+                src="images/index/svg/icons/heart-min.svg" width="20" height="20" alt="">
+                <span class="favourites-count">12</span>
+                <span class="visually-hidden">Избранное</span></a></li>
+          <li class="navigation-item"><a class="button header-button" href="#"><span>Хочу
                 сюда</span></a></li>
         </ul>
       </nav>
@@ -34,7 +36,6 @@
         <h1 class="visually-hidden">Отдых в каньоне Седона</h1>
         <img class="graphic" src="images/index/svg/graphics/welcome-to-sedona.svg" width="458" height="352"
           alt="Надпись на английском – Добро пожаловать в Седону">
-        <img src="images/index/jpg/background-header.jpg" width="1200" height="485" alt="Каньон Седона">
       </section>
       <section class="advantages">
         <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -72,20 +73,20 @@
           <li class="suggestions-item">
             <img class="suggestions-icon" src="images/index/svg/icons/Advantage-icon-min.svg" width="75" height="72"
               alt="Иконка домика">
-            <h3 class="suggestions-title">Жильё</h3>
+            <h3 class="suggestions-item-title">Жильё</h3>
             <p class="suggestions-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="suggestions-item">
             <img class="suggestions-icon" src="images/index/svg/icons/Advantage-icon-1-min.svg" width="75" height="72"
               alt="Иконка бургера">
-            <h3 class="suggestions-title">Еда</h3>
+            <h3 class="suggestions-item-title">Еда</h3>
             <p class="suggestions-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="suggestions-item">
             <img class="suggestions-icon" src="images/index/svg/icons/Advantage-icon-2-min.svg" width="75" height="72"
               alt="Иконка подарка">
-            <h3 class="suggestions-title">Сувениры</h3>
+            <h3 class="suggestions-item-title">Сувениры</h3>
             <p class="suggestions-item-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
@@ -94,17 +95,16 @@
         <h2 class="catalog-entrance-title">Заинтересовались?</h2>
         <p class="catalog-entrance-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
-        <a class="button primary-button" href="catalog.html">Поиск гостиницы в Седоне</a>
+        <a class="button catalog-entrance-button" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscription">
+      <section class="subscription-w-background">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden">Ваш e-mail</label>
-          <input class="input" type="email" name="subscription-email" placeholder="Ваш e-mail">
-          <button class="button primary-button" type="submit">Подписаться</button>
+          <input class="subscription-input" type="email" name="subscription-email" placeholder="Ваш e-mail">
+          <button class="button subscription-button" type="submit">Подписаться</button>
         </form>
-        <img src="images/index/jpg/background-footer.jpg" width="1200" height="415" alt="фоновое изображение">
       </section>
     </main>
     <footer class="page-footer">
@@ -113,21 +113,21 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a href="https://vk.com/htmlacademy">
-              <img class="footer-social-icon" src="images/index/svg/icons/vk-logo.svg" width="24" height="14"
+               <img class="footer-social-icon vk-logo" src="images/index/svg/icons/vk-logo.svg" width="24" height="14"
                 alt="Иконка ВКонтакте">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="https://t.me/htmlacademy">
-              <img class="footer-social-icon" src="images/index/svg/icons/telegram-logo.svg" width="18" height="16"
+              <img class="footer-social-icon telegram-logo" src="images/index/svg/icons/telegram-logo.svg" width="18" height="16"
                 alt="Иконка Телеграма">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a href="https://www.youtube.com/user/htmlacademyru">
-              <img class="footer-social-icon" src="images/index/svg/icons/youtube-logo.svg" width="22" height="17"
+              <img class="footer-social-icon youtube-logo" src="images/index/svg/icons/youtube-logo.svg" width="22" height="17"
                 alt="Иконка Ютуба">
               <span class="visually-hidden">Youtube</span>
             </a>
